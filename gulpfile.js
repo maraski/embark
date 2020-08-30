@@ -36,7 +36,7 @@ const paths = {
     dest: './build/assets/images'
   },
   favicon: {
-    src: './app/favicon.ico',
+    src: './app/favicon.png',
     dest: './build'
   },
   fonts: {
