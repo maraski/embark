@@ -128,7 +128,7 @@ header {
 	background-size: contain;
 	background-position: bottom;
 	@include media-breakpoint-up(md) {
-		height: 100%;
+		height: auto;
 	}
 	.container {
 		height: 100%;
