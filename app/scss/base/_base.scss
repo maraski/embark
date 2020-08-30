@@ -41,8 +41,14 @@ header {
 				display: none;
 			}
 			&.blue_logos {
-				.blue_logo, .blue_logotype {
+				.blue_logo {
 					display: inline-block !important;
+				}
+				.blue_logotype {
+					display: none;
+					@include media-breakpoint-up(md) {
+						display: inline-block !important;
+					}
 				}
 				.logo, .logotype {
 					display: none;
