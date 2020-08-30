@@ -1,0 +1,25 @@
+// Scss variables (colours etc...)
+
+$green: #339963;
+$orange: #F37021;
+$blue: #035BAA;
+$yellow: #FFDD02;
+$teal: #01ABBE;
+
+// $font-size-base: 1.3rem;
+
+$h1-size:                $font-size-base * 2.8 !default;
+$h2-size:                $font-size-base * 1.8 !default;
+$h3-size:                $font-size-base * 1.3 !default;
+$h4-size:                $font-size-base * 1.1 !default;
+$h5-size:                $font-size-base * 1 !default;
+$h6-size:                $font-size-base !default;
+
+@include media-breakpoint-up(md) {
+	$h1-size:                $font-size-base * 3.3 !default;
+	$h2-size:                $font-size-base * 2 !default;
+	$h3-size:                $font-size-base * 1.5 !default;
+	$h4-size:                $font-size-base * 1.25 !default;
+	$h5-size:                $font-size-base * 1 !default;
+	$h6-size:                $font-size-base !default;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "embark",
+  "version": "1.0.0",
+  "description": "A simple boilerplate for front-end web development which uses [Gulp](https://gulpjs.com/) v4.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp",
+    "clean": "gulp clean"
+  },
+  "author": "mara estalilla",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}

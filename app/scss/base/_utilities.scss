@@ -1,0 +1,52 @@
+// Reusuable classes
+
+.btn {
+	font-weight: bold;
+	font-size: 1.2rem;
+	border: 3px solid transparent;
+	border-radius: 0;
+	margin-bottom: 1rem;
+	&.btn-primary {
+		background: $orange;
+		&:hover {
+			border: 3px solid #ffffff;
+			background: #ffffff;
+			color: $orange;
+		}
+	}
+	&.btn-secondary {
+		background: transparent;
+		border: 3px solid #ffffff;
+		&:hover {
+			background: #ffffff;
+			color: $orange;
+		}
+	}
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Cysan';
+	font-size: $h1-size;
+}
+
+h2 {
+	font-size: $h2-size;
+}
+
+h3 {
+	font-size: $h3-size;
+}
+
+h4 {
+	font-size: $h4-size;
+}
+
+h5 {
+	font-size: $h5-size;
+	color: $yellow;
+}

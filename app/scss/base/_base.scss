@@ -1,0 +1,247 @@
+// Base styles
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+	color: #E6E7E8;
+	font-family: $primary-font;
+	font-size: $font-size-base !important;
+    font-weight: 300;
+    font-style: normal;
+	height: 100%;
+	background: $orange;
+}
+
+header {
+	.navbar {
+		padding: 2rem;
+		.navbar-brand {
+			.logo {
+				width: 2.5rem;
+				margin-right: 1rem;
+			}
+			.logotype {
+				width: 16rem;
+				display: none;
+				@include media-breakpoint-up(md) {
+					display: inline-block;
+				}
+			}
+		}
+		.nav-item {
+			font-size: 1.3rem;
+			.nav-link {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+#splash {
+	min-height: 100%;
+	height: 100%;
+	background: #339963;
+	position: relative;
+	font-size: 1rem;
+	background-image: url('../images/bg/splash1_welcome_2.png');
+	background-size: 45%;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	@include media-breakpoint-up(sm) {
+		font-size: 1.2rem;
+	}
+	&::before{
+		content: "";
+		left: 0;
+		background-image: url('../images/bg/splash1_welcome_1.png');
+		position: absolute;
+		bottom: 0;
+		width: 45%;
+		height: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-y: 100%;
+		z-index: 0;
+	}
+	.container {
+		height: inherit;
+		.row {
+			height: inherit;
+			.centered_welcome {
+				margin-bottom: 5rem;
+				z-index: 99999;
+				.welcome {
+					width: 90%;
+					@include media-breakpoint-up(sm) {
+						width: 70%;
+					}
+				}
+				p {
+					width: 100%;
+					margin: 2rem auto;
+				}
+				.btn {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+#edteam {
+	min-height: 100%;
+	background: $blue;
+	padding: 5rem 0;
+	background-image: url('../images/bg/splash2_edteam.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+	@include media-breakpoint-up(md) {
+		height: 100%;
+	}
+	.container {
+		height: 100%;
+		display: flex;
+		.embark_logo {
+			width: 80%;
+			margin: 0 auto 2rem;
+			display: block;
+		}
+		.team {
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 1.5rem;
+			h5 {
+				font-weight: normal;
+			}
+			span {
+				display: block;
+				a {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+
+#about {
+	background: $orange;
+	padding: 15rem 0;
+	text-align: center;
+	position: relative;
+	@include media-breakpoint-up(md) {
+		background: transparent;
+	}
+	#background {
+		display:none;
+		@include media-breakpoint-up(md) {
+			display:block;
+			position: fixed;
+			background: $orange;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -100;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+	h1 {
+		margin-bottom: 1rem;
+	}
+	span {
+		font-weight: bold;
+	}
+}
+
+#eb {
+	background: #ffffff;
+	color: #0B0203;
+	padding: 8rem 0 6rem;
+	h1, h3, h4 {
+		display: block;
+		width: 100%;
+	}
+	h1 {
+		color: $teal;
+	}
+	h3, h5 {
+		font-weight: bold;
+		color: #0B0203;
+	}
+	h5, h6 {
+		font-size: .9rem;
+	}
+	h5 {
+		margin-bottom: 0;
+	}
+	h6 {
+		color: $orange;
+	}
+	.col {
+		text-align: center;
+	}
+	.eb_row_1 {
+		@include media-breakpoint-up(md) {
+			padding: 0 11%;
+		}
+	}
+	.eb_icons {
+		text-align: center;
+		> .col,
+		> [class*="col-"] {
+			margin-bottom: 3rem;
+			img {
+				max-width: 7rem;
+				display: block;
+				margin: 0 auto .5rem;
+			}
+		}
+	}
+	.spo {
+		> .col,
+		> [class*="col-"] {
+			padding: 0 1rem;
+			margin: 0 0 2rem;
+			@include media-breakpoint-up(md) {
+				margin: 0;
+			}
+		}
+		h6 {
+			color: $blue;
+		}
+	}
+}
+
+footer {
+	background: $teal;
+	padding: 3rem 1rem;
+	@include media-breakpoint-up(md) {
+		padding: 3rem;
+	}
+	span {
+		font-weight: bold;
+	}
+	.copy {
+		a {
+			color: #ffffff;
+			font-weight: bold;
+			font-size: .8rem;
+		}
+		small {
+			opacity: .7;
+		}
+	}
+}
