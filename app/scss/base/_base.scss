@@ -26,22 +26,37 @@ header {
 	.navbar {
 		padding: 2rem;
 		.navbar-brand {
-			.logo {
+			.logo,.blue_logo {
 				width: 2.5rem;
 				margin-right: 1rem;
 			}
-			.logotype {
+			.logotype, .blue_logotype {
 				width: 16rem;
 				display: none;
 				@include media-breakpoint-up(md) {
 					display: inline-block;
 				}
 			}
+			.blue_logo, .blue_logotype {
+				display: none;
+			}
+			&.blue_logos {
+				.blue_logo, .blue_logotype {
+					display: inline-block !important;
+				}
+				.logo, .logotype {
+					display: none;
+				}
+			}
 		}
+
 		.nav-item {
 			font-size: 1.3rem;
 			.nav-link {
 				color: #ffffff;
+				&.blue_icons {
+					color: $blue;
+				}
 			}
 		}
 	}
