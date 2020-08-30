@@ -71,7 +71,7 @@ const styles = () =>
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({includePaths: ['node_modules']}).on('error', sass.logError))
-    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(postcss([autoprefixer(), cssnano({minifyFontValues: {removeQuotes: false}})]))
     .pipe(
       rename({
         basename: 'styles',
